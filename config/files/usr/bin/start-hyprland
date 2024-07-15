@@ -1,5 +1,6 @@
 #!/usr/bin/sh
 
+set -oue pipefail
 # Ported from start-sway
 
 ## Internal variables
@@ -17,7 +18,7 @@ set -o allexport
 eval "$(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)"
 set +o allexport
 
-## Load River-specific user environment customizations
+## Load hypr-specific user environment customizations
 if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/hyprland/environment" ]; then
     set -o allexport
     # shellcheck source=/dev/null
@@ -37,13 +38,13 @@ if _WLR_VARS=$(env | grep '^WLR_'); then
         systemd-cat -p notice -t "${_HYPRLAND_COMMAND##*/}"
 fi
 
-# Target to start user services after startup
-# "systemctl --user start hyprland.target" in hyprland config
-# TODO: Make this work correctly (if a logout happens it doesnt stop until it's run again now.. 
-# something should be able to stop it when hyprland exits.)
-exec systemctl --user stop hyprland-session.target
 
 # Start hyprland with extra arguments and send output to the journal
 # shellcheck disable=SC2086 # quoted expansion of EXTRA_ARGS can produce empty field
 exec systemd-cat --identifier=hyprland -- $_HYPRLAND_COMMAND $_HYPRLAND_EXTRA_ARGS "$@"
+
+# Target to start user services after startup
+# "systemctl --user start hyprland.target" in hyprland config
+# TODO: Make this work correctly (if a logout happens it doesnt stop 
+exec systemctl --user stop hyprland-session.target
 

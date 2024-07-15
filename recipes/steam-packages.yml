@@ -8,7 +8,7 @@ install:
 
   # Extra
   - mangohud
-  - gamemode
+
 # Add up-to-date gamescope
 repos:
   - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
