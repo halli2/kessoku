@@ -5,3 +5,18 @@ install:
   - mesa-va-drivers-freeworld.i686
   - mesa-vdpau-drivers-freeworld.i686
   - mesa-vdpau-drivers-freeworld.x86_64
+
+  # Extra
+  - mangohud
+  - gamemode
+# Add up-to-date gamescope
+repos:
+  - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
+install:
+  - gamescope
+# Try out gamescope-session
+repos:
+  - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
+install:
+  - gamescope-session-plus
+  - gamescope-session-steam

@@ -28,6 +28,9 @@ install:
   
   # Media
   - mpv
+  - imv
+  - zathura
+  - zathura-pdf-mupdf
   
   # Audio
   - easyeffects

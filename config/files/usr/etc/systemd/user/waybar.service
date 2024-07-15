@@ -1,0 +1,10 @@
+[Unit]
+Description=Waybar
+PartOf=graphical-session.service
+
+[Service]
+ExecStart=/usr/bin/waybar
+
+[Install]
+WantedBy=hyprland-session.target
+Requires=dbus-setenv.service

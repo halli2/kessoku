@@ -1,0 +1,9 @@
+[Unit]
+Description=Kanshi monitor configuration
+After=xdg-desktop-portal.service
+
+[Service]
+ExecStart=/usr/bin/kanshi
+
+[Install]
+WantedBy=default.target
