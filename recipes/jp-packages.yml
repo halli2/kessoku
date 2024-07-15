@@ -1,0 +1,9 @@
+type: rpm-ostree
+install:
+  - langpacks-ja
+  # Keyboard
+  - fcitx5
+  - fcitx5-mozc
+  # Text-analyzing
+  - mecab
+  - mecab-ipadic

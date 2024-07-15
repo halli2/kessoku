@@ -1,0 +1,37 @@
+type: rpm-ostree
+install:
+  # Launcher
+  - rofi-wayland
+
+  - alacritty
+  # CLI
+  - fish
+  - fastfetch
+  - eza
+  - fd-find
+  - zoxide
+  - git-delta
+  - p7zip
+  - unrar
+  - xarchiver
+  - zstd
+  - ripgrep
+  - just
+  - helix
+
+  # div
+  - syncthing
+  - wf-recorder
+  - lxpolkit
+
+  - wl-clipboard
+  
+  # Media
+  - mpv
+  
+  # Audio
+  - easyeffects
+  - pipewire
+  - wireplumber
+
+  

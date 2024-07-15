@@ -1,0 +1,7 @@
+type: rpm-ostree
+install:
+  - steam-devices
+  - steam
+  - mesa-va-drivers-freeworld.i686
+  - mesa-vdpau-drivers-freeworld.i686
+  - mesa-vdpau-drivers-freeworld.x86_64
