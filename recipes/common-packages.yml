@@ -25,6 +25,8 @@ install:
   - lxpolkit
 
   - wl-clipboard
+
+  - pipx
   
   # Media
   - mpv

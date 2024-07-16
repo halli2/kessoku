@@ -17,6 +17,9 @@ modules:
   - type: files
     files:
       - usr: /usr 
+  - type: script
+    scripts:
+      - remove_annoying_justfile_generator.sh
   - type: default-flatpaks # set up flathub
     system:
   - type: signing
