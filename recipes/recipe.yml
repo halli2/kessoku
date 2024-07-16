@@ -5,6 +5,7 @@ base-image: ghcr.io/ublue-os/base-main
 image-version: latest
 
 modules:
+  - from-file: podman.yml
   - from-file: steam-packages.yml
   - from-file: hyprland-packages.yml
   - from-file: common-packages.yml
@@ -16,10 +17,10 @@ modules:
         - FiraCode
   - type: files
     files:
-      - usr: /usr 
+      - usr: /usr
   - type: script
     scripts:
       - remove_annoying_justfile_generator.sh
-  - type: default-flatpaks # set up flathub
-    system:
+  # - type: default-flatpaks # set up flathub
+  #   system:
   - type: signing

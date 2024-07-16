@@ -1,16 +1,14 @@
 type: rpm-ostree
 install:
   - steam-devices
-  - steam
-  - mesa-va-drivers-freeworld.i686
-  - mesa-vdpau-drivers-freeworld.i686
-  - mesa-vdpau-drivers-freeworld.x86_64
+#   - steam
+#   - mesa-va-drivers-freeworld.i686
+#   - mesa-vdpau-drivers-freeworld.i686
+#   - mesa-vdpau-drivers-freeworld.x86_64
 
-  # Extra
-  - mangohud
-
-# Add up-to-date gamescope
-repos:
-  - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
-install:
-  - gamescope
+# repos:
+#   - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
+#   # Extra
+# install:
+#   - mangohud
+#   - gamescope

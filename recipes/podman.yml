@@ -1,0 +1,5 @@
+type: rpm-ostree
+repos:
+- https://copr.fedorainfracloud.org/coprs/rhcontainerbot/podman-next/repo/fedora-%OS_VERSION%/rhcontainerbot-podman-next-fedora-%OS_VERSION%.repo
+install:
+  - podman
