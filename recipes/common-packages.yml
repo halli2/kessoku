@@ -31,10 +31,15 @@ install:
   - imv
   - zathura
   - zathura-pdf-mupdf
+
+  # Jellyfin-shim-mpv weak dependencies
+  - python3-pystray
+  - python3-tkinter
   
   # Audio
   - easyeffects
   - pipewire
   - wireplumber
+  - pamixer
 
   
