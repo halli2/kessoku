@@ -26,8 +26,6 @@ install:
 
   - wl-clipboard
 
-  - pipx
-  
   # Media
   - mpv
   - imv
