@@ -7,4 +7,3 @@ ExecStart=/usr/bin/waybar
 
 [Install]
 WantedBy=hyprland-session.target
-Requires=dbus-setenv.service
