@@ -7,3 +7,5 @@ install:
   # Text-analyzing
   - mecab
   - mecab-ipadic
+
+  - fontconfig
