@@ -1,6 +1,6 @@
 [Unit]
 Description=Waybar
-After=graphical-session.service
+After=hyprland-session.service
 
 [Service]
 ExecStart=/usr/bin/waybar
