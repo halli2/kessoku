@@ -20,6 +20,7 @@ install:
   - helix
 
   - npm
+  - python3-ffmpeg-python
 
   # div
   - syncthing
