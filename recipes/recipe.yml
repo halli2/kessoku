@@ -21,6 +21,12 @@ modules:
   - type: script
     scripts:
       - remove_annoying_justfile_generator.sh
+  - type: rpm-ostree
+    remove:
+      - firefox
+      - firefox-langpacks
   - type: default-flatpaks # set up flathub
     system:
+      install:
+        - org.mozilla.firefox
   - type: signing
