@@ -6,7 +6,6 @@ install:
   - hyprpaper
   - grimblast
   - xdg-desktop-portal-hyprland
-  - xdg-desktop-portal-gtk
 
   # Semi-related
   - waybar
