@@ -4,8 +4,9 @@ repos:
 install:
   - hyprland
   - hyprpaper
-  - xdg-desktop-portal-hyprland
   - grimblast
+  - xdg-desktop-portal-hyprland
+  - xdg-desktop-portal-gtk
 
   # Semi-related
   - waybar
