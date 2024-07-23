@@ -25,6 +25,7 @@ install:
   - syncthing
   - wf-recorder
   - lxpolkit
+  - xdg-user-dirs
 
   - wl-clipboard
 
