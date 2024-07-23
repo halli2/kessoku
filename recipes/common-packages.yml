@@ -27,7 +27,6 @@ install:
   - lxpolkit
 
   - wl-clipboard
-  - xdg-user-dirs
 
   # Media
   - mpv
