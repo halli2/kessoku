@@ -51,6 +51,6 @@ install:
   - easyeffects
   # - pipewire
   # - wireplumber
-  # - pamixer
+  - pamixer
 
   
