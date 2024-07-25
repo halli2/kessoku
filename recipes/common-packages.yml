@@ -33,7 +33,9 @@ install:
   - grimshot
 
   # Login
+  - cage
   - greetd
+  - gtkgreet
 
   # Media
   - mpv

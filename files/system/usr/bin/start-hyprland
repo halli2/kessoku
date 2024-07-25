@@ -7,7 +7,15 @@ set -oue pipefail
 readonly _HYPRLAND_COMMAND="/usr/bin/Hyprland"
 HYPRLAND_EXTRA_ARGS=""
 
-## Internal variables
+# Session
+export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=sway
+export XDG_CURRENT_DESKTOP=sway
+# Wayland stuff
+export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 ## Apply `environment.d(5)` customizations
 # This can be used to share the custom environment configs with systemd --user.
