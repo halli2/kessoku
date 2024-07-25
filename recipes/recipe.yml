@@ -19,7 +19,8 @@ modules:
         - FiraCode
   - type: files
     files:
-      - usr: /usr
+      - source: system
+        destination: /
   - type: script
     scripts:
       - remove_annoying_justfile_generator.sh

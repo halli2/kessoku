@@ -4,8 +4,8 @@ set -oue pipefail
 # Ported from start-sway
 
 ## Internal variables
-readonly _HYPRLAND_COMMAND="/usr/bin/Hyprland"
-HYPRLAND_EXTRA_ARGS=""
+readonly _RIVER_COMMAND="/usr/bin/river"
+RIVER_EXTRA_ARGS=""
 
 ## Internal variables
 
@@ -18,33 +18,30 @@ set -o allexport
 eval "$(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)"
 set +o allexport
 
-## Load hypr-specific user environment customizations
-if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/hyprland/environment" ]; then
+## Load River-specific user environment customizations
+if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/river/environment" ]; then
     set -o allexport
     # shellcheck source=/dev/null
-    . "${XDG_CONFIG_HOME:-$HOME/.config}/hyprland/environment"
+    . "${XDG_CONFIG_HOME:-$HOME/.config}/river/environment"
     set +o allexport
 fi
 
 ## Unexport internal variables
 # export -n is not POSIX :(
-_HYPRLAND_EXTRA_ARGS="$HYPRLAND_EXTRA_ARGS"
-unset HYPRLAND_EXTRA_ARGS
+_RIVER_EXTRA_ARGS="$RIVER_EXTRA_ARGS"
+unset RIVER_EXTRA_ARGS
 
 ## Log all exported WLR_ variables
 if _WLR_VARS=$(env | grep '^WLR_'); then
     printf 'environment variables for wlroots: %s' "$_WLR_VARS" |
         tr '\n' ' ' |
-        systemd-cat -p notice -t "${_HYPRLAND_COMMAND##*/}"
+        systemd-cat -p notice -t "${_RIVER_COMMAND##*/}"
 fi
 
-
-# Start hyprland with extra arguments and send output to the journal
+# Start river with extra arguments and send output to the journal
 # shellcheck disable=SC2086 # quoted expansion of EXTRA_ARGS can produce empty field
-exec systemd-cat --identifier=hyprland -- $_HYPRLAND_COMMAND $_HYPRLAND_EXTRA_ARGS "$@"
+exec systemd-cat -- $_RIVER_COMMAND $_RIVER_EXTRA_ARGS "$@"
 
 # Target to start user services after startup
-# "systemctl --user start hyprland.target" in hyprland config
-# TODO: Make this work correctly (if a logout happens it doesnt stop 
-exec systemctl --user stop hyprland-session.target
-
+# "systemctl --user start river-session.target" in river config
+systemctl --user stop river-session.target
