@@ -32,6 +32,9 @@ install:
   - slurp
   - grimshot
 
+  # Login
+  - greetd
+
   # Media
   - mpv
   - imv
