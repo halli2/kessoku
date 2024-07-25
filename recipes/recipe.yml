@@ -12,6 +12,7 @@ modules:
   # - from-file: river-packages.yml
   - from-file: common-packages.yml
   - from-file: jp-packages.yml
+  - from-file: bazzite.yml
   # - from-file: cosmic-packages.yml
   - type: fonts
     fonts:

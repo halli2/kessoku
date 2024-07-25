@@ -1,0 +1,5 @@
+type: rpm-ostree
+remove:
+  - waydroid
+  - waydroid-selinux
+  - lutris
