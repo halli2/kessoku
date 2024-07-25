@@ -1,4 +1,8 @@
 type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite-%OS_VERSION%/repo/fedora-%OS_VERSION%/kylegospo-bazzite-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
+install:
+  - gamescope-session-plus
 remove:
   - waydroid
   - waydroid-selinux

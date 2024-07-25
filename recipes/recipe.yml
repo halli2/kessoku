@@ -2,7 +2,7 @@ name: kessoku
 description: This is my personal OS image.
 
 # base-image: ghcr.io/ublue-os/base-main
-base-image: ghcr.io/ublue-os/bazzite-deck
+base-image: ghcr.io/ublue-os/bazzite
 image-version: latest
 
 modules:
