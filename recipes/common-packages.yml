@@ -1,7 +1,7 @@
 type: rpm-ostree
 install:
   # Launcher
-  - rofi-wayland
+  # - rofi-wayland
 
   - alacritty
   # CLI
@@ -23,19 +23,19 @@ install:
   # div
   - syncthing
   - wf-recorder
-  - lxpolkit
-  - xdg-user-dirs
+  # - lxpolkit
+  # - xdg-user-dirs
 
-  - wl-clipboard
+  # - wl-clipboard
 
   - grim
   - slurp
   - grimshot
 
   # Login
-  - cage
-  - greetd
-  - gtkgreet
+  # - cage
+  # - greetd
+  # - gtkgreet
 
   # Media
   - mpv
@@ -49,8 +49,8 @@ install:
   
   # Audio
   - easyeffects
-  - pipewire
-  - wireplumber
-  - pamixer
+  # - pipewire
+  # - wireplumber
+  # - pamixer
 
   
