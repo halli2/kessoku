@@ -1,0 +1,15 @@
+type: rpm-ostree
+install:
+  - river
+
+  - waybar
+  - yambar
+  - dunst
+  - kanshi
+
+  # 'DE' stuff
+  - thunar
+  - thunar-archive-plugin
+  - thunar-volman
+  - xarchiver
+

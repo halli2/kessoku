@@ -28,6 +28,10 @@ install:
 
   - wl-clipboard
 
+  - grim
+  - slurp
+  - grimshot
+
   # Media
   - mpv
   - imv

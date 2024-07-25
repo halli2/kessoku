@@ -7,7 +7,8 @@ image-version: latest
 modules:
   - from-file: podman.yml
   - from-file: steam-packages.yml
-  - from-file: hyprland-packages.yml
+  # - from-file: hyprland-packages.yml
+  - from-file: river-packages.yml
   - from-file: common-packages.yml
   - from-file: jp-packages.yml
   - from-file: cosmic-packages.yml
