@@ -13,7 +13,9 @@ install:
   - wlogout
 
   # 'DE' stuff
-  - thunar
-  - thunar-archive-plugin
-  - thunar-volman
+  # - thunar
+  # - thunar-archive-plugin
+  # - thunar-volman
   - xarchiver
+
+  - dolphin
