@@ -52,5 +52,7 @@ install:
   - pipewire
   - wireplumber
   - pamixer
+  # Until wpctl is better for ports(routes)
+  - pulseaudio-utils
 
   
