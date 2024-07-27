@@ -54,5 +54,8 @@ install:
   - pamixer
   # Until wpctl is better for ports(routes)
   - pulseaudio-utils
-
-  
+repos:
+  - https://copr.fedorainfracloud.org/coprs/medzik/jetbrains/repo/fedora-%OS_VERSION%/medzik-jetbrains-fedora-%OS_VERSION%.repo
+install:
+  - rustrover
+  - jetbrains-gateway
